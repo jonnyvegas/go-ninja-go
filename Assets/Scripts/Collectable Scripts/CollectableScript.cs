@@ -19,6 +19,7 @@ public class CollectableScript : MonoBehaviour {
 
 	void InitializeObstacles()
 	{
+		// Randomize position of obstacles.
 		int index = 0;
 		for (int i = 0; i < obstacles.Length * 3; i++) {
 			GameObject obj = Instantiate (obstacles [index], new Vector3 (transform.position.x,
